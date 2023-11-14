@@ -31,7 +31,6 @@ export const Label = styled.label`
 export const AddContactBtn = styled.button`
   display: flex;
   flex-flow: column;
-  margin-top: 20px;
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
@@ -51,6 +50,7 @@ export const AddContactBtn = styled.button`
     box-shadow: 0 0 10px #fff;
   }
   font-weight: 700;
+  margin: 20px auto; 
 `;
 
 export const PhonebookContainer = styled.div`
@@ -88,10 +88,10 @@ export const DeleteBtn = styled.button`
     box-shadow: 0 0 10px #fff;
   }
   font-weight: 700;
- margin-left: 20px;
- display: flex;
- justify-content: space-between;
-`;
+  margin-left: auto; 
+  display: flex;
+  justify-content: space-between;
+`
 
 export const ListItem = styled.li`
   color: white;
@@ -105,10 +105,12 @@ export const ListItem = styled.li`
     margin-left: -1em;
   }
   display: flex;
-  justify-content: flex-start;
-  flex-grow: 1;
+  justify-content: space-between; 
   list-style: none;
   margin: 10px;
+  > span {
+    margin-right: 20px; 
+  }
 `;
 
 export const NumberContainer = styled.div`
@@ -138,5 +140,6 @@ export const Contact = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 10px;
-  width: 100%; /* Забезпечує, що кожен контакт займе доступний простір */
-`;
+  width: 100%; 
+`
+
